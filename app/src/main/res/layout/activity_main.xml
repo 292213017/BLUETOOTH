@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/linear_layout_top"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/notice_view"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="蓝牙未开启"
+            />
+        <TextView
+            android:id="@+id/notice_recv_view"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+          />
+        <TextView
+            android:id="@+id/notice_send_view"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+           />
+        <Button
+            android:id="@+id/turn_on_off"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="ON"/>
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:id="@+id/linear_layout_bottom"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/clear_recv_view"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="clear" />
+
+        <EditText
+            android:id="@+id/send_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint="输入框，默认@#结尾" />
+
+        <Button
+            android:id="@+id/send"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="send" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/recv_view"
+        android:text="收到"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+</LinearLayout>
